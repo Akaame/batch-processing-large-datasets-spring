@@ -1,6 +1,6 @@
-package com.techshard.batch.configuration;
+package com.sddk.demo.configuration;
 
-import com.techshard.batch.dao.entity.Voltage;
+import com.sddk.demo.dao.Voltage;
 
 import org.springframework.batch.item.ItemProcessor;
 

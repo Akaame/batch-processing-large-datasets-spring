@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    platform: postgres
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/postgresdemo}
+    username: postgres
+    password: postgres
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: create
+    generate-ddl: true
+
+  batch:
+    initialize-schema: always

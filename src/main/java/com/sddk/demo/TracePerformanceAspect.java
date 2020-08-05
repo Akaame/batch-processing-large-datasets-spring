@@ -1,4 +1,4 @@
-package com.techshard.batch;
+package com.sddk.demo;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -14,7 +14,7 @@ public class TracePerformanceAspect {
 
     private final Logger logger = LoggerFactory.getLogger(TracePerformanceAspect.class);
 
-    @Around ("execution(* com.techshard..*.*(..)))")
+    @Around ("execution(* com.sddk..*.*(..)))")
     public Object logTracePerformanceAspect(ProceedingJoinPoint joinPoint) throws Throwable {
 
         MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();

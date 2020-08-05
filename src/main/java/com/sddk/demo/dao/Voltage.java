@@ -1,7 +1,6 @@
-package com.techshard.batch.dao.entity;
+package com.sddk.demo.dao;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 @Entity
@@ -12,11 +11,9 @@ public class Voltage {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private long id;
 
-    @NotNull
     @Column (name = "volt", precision = 10, scale = 4, nullable = false)
     private BigDecimal volt;
 
-    @NotNull
     @Column (name = "time", nullable = false)
     private double time;
 

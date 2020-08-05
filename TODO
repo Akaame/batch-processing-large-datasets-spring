@@ -1,0 +1,5 @@
+Create a multi-stage docker file to avoid packaging the code on your local env
+
+How to integrate this with Spring Integration (e.g FileInboundChannelAdapter to watch dirs) to kick off batch jobs?
+-- https://docs.spring.io/spring-batch/docs/4.0.x/reference/html/spring-batch-integration.html#launching-batch-jobs-through-messages
+When using DB Readers it is possible to add an processed indicator to keep track of reruns. How to achieve this via flat files?
